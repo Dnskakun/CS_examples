@@ -2,14 +2,14 @@
 //Console.SetCursorPosition(10, 4);
 //Console.WriteLine("+");
 
-int x1 = 50, x2 = 50, x4 = 50, x6 = 50, x7 = 50;
+int x1 = 50, x2 = 50, x4 = 50, x6 = 50, x7 = 50; //ветви куста
 //    xb = 1, yb = 30,
 //    xc = 80, yc = 30;
 
 int y = 20;
 int count = 0;
 
-while(count < 100)
+while(count < 100) //рисуем землю
 {
     Console.SetCursorPosition(count, y);
     Console.WriteLine("+");
@@ -18,7 +18,7 @@ while(count < 100)
 
 count = 0;
 
-while(count < 12)
+while(count < 12) //рисуем ветви
 {
     int  branch = new Random().Next(-1, 2); // [-1;2) -1 0 1
     if (branch == -1)
